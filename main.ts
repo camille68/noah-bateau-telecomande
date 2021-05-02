@@ -9,6 +9,6 @@ basic.forever(function () {
     p_2 = pins.analogReadPin(AnalogPin.P2)
     // mal traduit
     // 
-    p_2 = Math.round(Math.map(p_1, 4, 1007, -5, 5))
+    p_2 = Math.round(Math.map(p_2, 4, 1020, -5, 5))
     basic.pause(200)
 })
