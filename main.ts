@@ -8,7 +8,7 @@ basic.forever(function () {
     basic.pause(200)
     p_2 = pins.analogReadPin(AnalogPin.P2)
     // mal traduit
-    p_2 = Math.round(Math.map(p_1, 4, 1007, -5, 5))
+    p_2 = Math.round(Math.map(p_1, 4, 1007, 0, 10))
     basic.pause(200)
     if (p_1 == 0) {
         radio.sendValue("p_1", p_1 * 20)
